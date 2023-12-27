@@ -1,4 +1,3 @@
-# khantlintheinDotNetcore
 
 
 ADO.NET
@@ -9,4 +8,4 @@ SSMS - create a database
 NuGet Package Manager = npm package manager 
 
 Dapper - ORM ( Object Realational Mapping )
-Create Model 
+Create Model >> then Create Query 

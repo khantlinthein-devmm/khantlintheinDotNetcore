@@ -22,7 +22,7 @@ namespace khantlintheinDotNetcore.ConsoleApp.AdoDotNetExamples
             //Edit(1);
             //Edit(13);
             //Update(1,"Movie", "Harry", "Like You", "Series");
-            Delete(3);
+            //Delete();
         }
 
         private void Read()

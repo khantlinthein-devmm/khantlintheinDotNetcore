@@ -1,4 +1,5 @@
 ﻿using khantlintheinDotNetcore.ConsoleApp.AdoDotNetExamples;
+using khantlintheinDotNetcore.ConsoleApp.DapperExamples;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -63,8 +64,10 @@ Console.WriteLine("--- Myanmar ---");
 //}
 
 
-AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
-adoDotNetExample.Run();
+//AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
+//adoDotNetExample.Run();
 
+DapperExample dapperExample = new DapperExample();
+dapperExample.Run();
 
 Console.ReadKey();
