@@ -1,13 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace khantlintheinDotNetcore.ConsoleApp.Models
 {
+    [Table("Tb_blog")]
     public class BlogDataModel
     {
+        [Key]
         public int Blog_ID { get; set; }
 
         public string Blog_Name { get; set; }
