@@ -101,7 +101,7 @@ namespace khantlintheinDotNetcore.RestApi.Controllers
 
 
         [HttpPatch("{id}")]
-        public IActionResult PathchBLog(int id, BlogDataModel blog)
+        public IActionResult PatchBLog(int id, BlogDataModel blog)
         {
             var item = _dbContext.Blogs.FirstOrDefault(x => x.Blog_ID == id);
             if (item == null)
