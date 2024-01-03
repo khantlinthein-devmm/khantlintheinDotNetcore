@@ -9,7 +9,7 @@ using SqlConnection = Microsoft.Data.SqlClient.SqlConnection;
 using SqlConnectionStringBuilder = Microsoft.Data.SqlClient.SqlConnectionStringBuilder;
 using SqlDataAdapter = Microsoft.Data.SqlClient.SqlDataAdapter;
 
-namespace LemonDotNetCore.RestAPI.Controllers
+namespace khantlintheinDotNetcore.RestApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
