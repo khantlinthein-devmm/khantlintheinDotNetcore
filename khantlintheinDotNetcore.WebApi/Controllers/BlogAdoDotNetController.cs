@@ -43,7 +43,7 @@ namespace khantlintheinDotNetcore.RestApi.Controllers
             List<BlogDataModel> lst = dt.AsEnumerable().Select(dr => new BlogDataModel
             {
                 Blog_ID = Convert.ToInt32(dr["Blog_ID"]),
-                Blog_Title = Convert.ToString(dr["Blog_Title"]),
+                Blog_Title = Convert.ToString(dr["Blog_Title"])!,
                 Blog_Name = Convert.ToString(dr["Blog_Name"]),
                 Blog_Content = Convert.ToString(dr["Blog_Content"]),
                 Blog_Category = Convert.ToString(dr["Blog_Category"])
@@ -77,7 +77,7 @@ namespace khantlintheinDotNetcore.RestApi.Controllers
             BlogDataModel blogItem = new BlogDataModel()
             {
                 Blog_ID = Convert.ToInt32(dt.Rows[0]["Blog_ID"]),
-                Blog_Title = Convert.ToString(dt.Rows[0]["Blog_Title"]),
+                Blog_Title = Convert.ToString(dt.Rows[0]["Blog_Title"])!,
                 Blog_Name = Convert.ToString(dt.Rows[0]["Blog_Name"]),
                 Blog_Content = Convert.ToString(dt.Rows[0]["Blog_Content"]),
                 Blog_Category = Convert.ToString(dt.Rows[0]["Blog_Category"])

@@ -11,9 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "khantlintheinDotNetcore.RestApi", "khantlintheinDotNetcore.WebApi\khantlintheinDotNetcore.RestApi.csproj", "{4FFE7B13-0D58-4FCB-BFD4-73CF5DD874DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "khantlintheinDotNetcore.RestApi", "khantlintheinDotNetcore.WebApi\khantlintheinDotNetcore.RestApi.csproj", "{4FFE7B13-0D58-4FCB-BFD4-73CF5DD874DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "khantlintheinDotNetcore.MinimalApi", "khantlintheinDotNetcore.MinimalApi\khantlintheinDotNetcore.MinimalApi.csproj", "{43C14421-6562-4749-9526-82B33C798177}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "khantlintheinDotNetcore.MinimalApi", "khantlintheinDotNetcore.MinimalApi\khantlintheinDotNetcore.MinimalApi.csproj", "{43C14421-6562-4749-9526-82B33C798177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "khantlintheinDotNetcore.ATMConsoleApp", "khantlintheinDotNetcore.ATMConsoleApp\khantlintheinDotNetcore.ATMConsoleApp.csproj", "{02D8D422-3018-4EA6-82EC-428705A8824E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{43C14421-6562-4749-9526-82B33C798177}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43C14421-6562-4749-9526-82B33C798177}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43C14421-6562-4749-9526-82B33C798177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02D8D422-3018-4EA6-82EC-428705A8824E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D8D422-3018-4EA6-82EC-428705A8824E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02D8D422-3018-4EA6-82EC-428705A8824E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D8D422-3018-4EA6-82EC-428705A8824E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

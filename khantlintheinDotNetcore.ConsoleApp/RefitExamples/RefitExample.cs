@@ -13,7 +13,7 @@ namespace khantlintheinDotNetcore.ConsoleApp.RefitExamples
         private readonly IBlogApi _blogApi = RestService.For<IBlogApi>("https://localhost:7221");
         public async Task Run()
         {
-           // await Read();
+            // await Read();
             //await Edit(9);
             //await Edit(7);
             await Create("new title", "new name ", "new content", "new category");
@@ -57,8 +57,8 @@ namespace khantlintheinDotNetcore.ConsoleApp.RefitExamples
                 Console.WriteLine(ex.ReasonPhrase!.ToString());
                 Console.WriteLine(ex.Content!.ToString());
             }
-            
-            
+
+
         }
 
         public async Task Create(string title, string name, string content, string category)
@@ -68,7 +68,7 @@ namespace khantlintheinDotNetcore.ConsoleApp.RefitExamples
                 Blog_Title = title,
                 Blog_Name = name,
                 Blog_Content = content,
-                Blog_Category = category    
+                Blog_Category = category
             });
             await Console.Out.WriteLineAsync(message);
 
@@ -94,7 +94,7 @@ namespace khantlintheinDotNetcore.ConsoleApp.RefitExamples
                 Console.WriteLine(ex.Content!.ToString());
                 Console.WriteLine(ex.ReasonPhrase!.ToString());
             }
-            
+
         }
 
         public async Task Delete(int id)
@@ -109,6 +109,8 @@ namespace khantlintheinDotNetcore.ConsoleApp.RefitExamples
 
                 Console.WriteLine(ex.ReasonPhrase?.ToString());
             }
-            
+
         }
+
+    }
 }

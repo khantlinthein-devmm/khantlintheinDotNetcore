@@ -142,12 +142,14 @@ namespace khantlintheinDotNetcore.ConsoleApp.HttpClientExamples
 
         #endregion
 
-
+        #region Delete
         public async Task Delete(int id)
         {
             HttpClient client = new HttpClient();
             HttpResponseMessage response = await client.DeleteAsync($"{_blogEndpoint}/{id}");
             Console.WriteLine(await response.Content.ReadAsStringAsync());
         }
+
+        #endregion
     }
 }

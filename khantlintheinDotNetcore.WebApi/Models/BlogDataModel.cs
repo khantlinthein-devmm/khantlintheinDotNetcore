@@ -16,7 +16,7 @@ namespace khantlintheinDotNetcore.RestApi.Models
 
         public string? Blog_Name { get; set; }
 
-        public string Blog_Title { get; set; }
+        public string? Blog_Title { get; set; }
 
         public string? Blog_Content { get; set; }
 

@@ -13,7 +13,6 @@ namespace khantlintheinDotNetcore.ConsoleApp.AdoDotNetExamples
 {
     public class AdoDotNetExample
     {
-        private object name;
 
         public void Run()
         {

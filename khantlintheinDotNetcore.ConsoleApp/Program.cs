@@ -1,6 +1,8 @@
 ﻿using khantlintheinDotNetcore.ConsoleApp.AdoDotNetExamples;
 using khantlintheinDotNetcore.ConsoleApp.DapperExamples;
 using khantlintheinDotNetcore.ConsoleApp.EFCoreExamples;
+using khantlintheinDotNetcore.ConsoleApp.HttpClientExamples;
+using khantlintheinDotNetcore.ConsoleApp.RefitExamples;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -71,7 +73,16 @@ Console.WriteLine("--- Myanmar ---");
 //DapperExample dapperExample = new DapperExample();
 //dapperExample.Run();
 
-EFCoreExample efCoreExample = new EFCoreExample();
-efCoreExample.Run();
+//EFCoreExample efCoreExample = new EFCoreExample();
+//efCoreExample.Run();
+
+//HttpClientExample httpClientExample = new HttpClientExample();
+//await httpClientExample.Run();
+
+Console.WriteLine("PLease wait for api ....");
+Console.ReadKey();
+
+RefitExample refitExample = new RefitExample();
+await refitExample.Run();
 
 Console.ReadKey();
