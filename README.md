@@ -1,6 +1,8 @@
 # khantlintheinDotNetcore
 
 api
+git checkout -b main (app)
+
 
 http method
 ------------
