@@ -1,0 +1,62 @@
+﻿@using khantlintheinDotNetcore.MVCApp.Models
+
+@model BlogDataModel
+
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Title</label>
+    <input type="text" class="form-control" value="@Model.Blog_Title" id="Blog_Title" name="Blog_Title" placeholder="Title">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <input type="text" class="form-control" value="@Model.Blog_Name" id="Blog_Name" name="Blog_Name" placeholder="Name">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Content</label>
+    <input type="text" class="form-control" value="@Model.Blog_Content" id="Blog_Content" name="Blog_Content" placeholder="Content">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Category</label>
+    <input type="text" class="form-control" value="@Model.Blog_Category" id="Blog_Category" name="Blog_Category" placeholder="Category">
+</div>
+
+
+<a class="btn btn-dark" href="/BlogAjax">Cancel</a>
+<button type="button" id="btnUpdate" class="btn btn-success">Update</button>
+@section scripts {
+    <script>
+        $('#btnUpdate').click(function (e) {
+            let title = $('#Blog_Title').val();
+            let name = $('#Blog_Name').val();
+            let content = $('#Blog_Content').val();
+            let category = $('#Blog_Category').val();
+
+            let _requestModel = {
+                Blog_Title: title,
+                Blog_Name: name,
+                Blog_Content: content,
+                Blog_Category: category,
+            };
+
+            console.log({ _requestModel });
+
+            $.ajax({
+                type: "POST",
+                url: '/BlogAjax/Update/@Model.Blog_ID',
+                data: { requestModel: _requestModel },
+                dataType: "json",
+                success: function (data) {
+                    console.log({ data });
+                    alert(data.message);
+                    location.href = "/BlogAjax";
+                },
+                error: function (ex) {
+                    var r = jQuery.parseJSON(response.responseText);
+                    console.log("Message: " + r.Message);
+                    console.log("StackTrace: " + r.StackTrace);
+                    console.log("ExceptionType: " + r.ExceptionType);
+                }
+            });
+        })
+    </script>
+}

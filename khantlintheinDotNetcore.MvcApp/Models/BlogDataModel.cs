@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace khantlintheinDotNetcore.MVCApp.Models
 {
-    [Table("Tb_blog")]
+    [Table("Tb_Blog")]
     public class BlogDataModel
     {
         [Key]
