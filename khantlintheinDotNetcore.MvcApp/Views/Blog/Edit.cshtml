@@ -1,0 +1,27 @@
+﻿@using khantlintheinDotNetcore.MVCApp.Models
+@model BlogDataModel
+
+<form method="post" action="/Blog/Update/@Model.Blog_ID">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="text" class="form-control" value="@Model.Blog_Name" name="Blog_Name" placeholder="Name">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="text" class="form-control" value="@Model.Blog_Title" name="Blog_Title" placeholder="Title">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Content</label>
+        <input type="text" class="form-control" value="@Model.Blog_Content" name="Blog_Content" placeholder="Content">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Category</label>
+        <input type="text" class="form-control" value="@Model.Blog_Category" name="Blog_Category" placeholder="Category">
+    </div>
+
+    <a href="/Blog" class="btn btn-dark">Cancel</a>
+    <button type="submit" class="btn btn-success">Update</button>
+</form>

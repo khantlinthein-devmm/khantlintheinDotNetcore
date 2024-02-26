@@ -1,24 +1,38 @@
-﻿
+﻿@using khantlintheinDotNetcore.MVCApp.Models
+
 @model List<BlogDataModel>
 @{
     ViewData["Title"] = "Blog";
+    int count = 0;
 }
 
+<a href="/Blog/Create" class="btn btn-success">Create</a>
 <table class="table">
     <thead>
         <tr>
             <th scope="col">#</th>
-            First
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Action</th>
+            <th scope="col">Name</th>
+            <th scope="col">Title</th>
+            <th scope="col">Content</th>
+            <th scope="col">Category</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
+        @foreach ( var item in Model)
+        {
+            <tr>
+                <th scope="row">@(++count)</th>
+                <td>
+                    <a href="/Blog/Edit/@item.Blog_ID" class="btn btn-warning" >Edit</a>
+                    <a href="/Blog/Delete/@item.Blog_ID" class='btn btn-danger' >Delete</a>
+                </td>
+                <td>@item.Blog_Name</td>
+                <td>@item.Blog_Title</td>
+                <td>@item.Blog_Content</td>
+                <td>@item.Blog_Category</td>
+            </tr>
+        }
+        
     </tbody>
 </table>
